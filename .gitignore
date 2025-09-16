@@ -483,4 +483,7 @@ $RECYCLE.BIN/
 # Vim temporary swap files
 *.swp
 /Bruno/*
+
+# Misc
 API/appsettings.json
+*.db-shm
