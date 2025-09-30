@@ -22,7 +22,7 @@ app.UseCors(options => options.AllowAnyHeader()
             "http://localhost:3000",
             "https://localhost:3000"
         ));
-        
+
 app.MapControllers();
 
 using var scope = app.Services.CreateScope();
@@ -37,7 +37,7 @@ try
 catch (Exception exception)
 {
     var logger = services.GetRequiredService<ILogger<Program>>();
-    logger.LogError(exception, "An error occurred during migration:");
+    logger.LogError(exception, "An error occurred during migration.");
     throw;
 }
 
